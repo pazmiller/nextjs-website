@@ -1,14 +1,21 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
+import SciFiGreeting from "./components/Greeting";
 
 export default function Home() {
   return (
-  
-    <div className="bg-white dark:bg-gray-900 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <Navbar />
-       
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+
+    <div className="bg-white dark:bg-gray-900 grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <Navbar/>
+
+    <div className="row-start-2 w-full flex justify-center my-12">
+        <div className="h-[150px] w-full max-w-[900px] flex justify-center items-center">
+            <SciFiGreeting glow_text="Hi! A Frontend Developer Here!" />
+        </div>
+    </div>
+    
+    <main className="flex flex-col gap-8 row-start-3 items-center sm:items-start w-full max-w-[900px] mt-4">      
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -55,10 +62,10 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-black dark:text-white">
+      <footer className="row-start-4 flex gap-6 flex-wrap items-center justify-center text-black dark:text-white mt-auto">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/jiafan-lou-205796227/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -69,7 +76,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          LinkedIn
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-black dark:text-white"
@@ -84,7 +91,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          CV
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-black dark:text-white"
