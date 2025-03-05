@@ -5,15 +5,15 @@ import Link from 'next/link';
 export default function Navbar(){
     return (
         <nav>
-            <ul className="text-black dark:text-white">
+            <ul className="flex flex-row md:flex-row gap-20 text-black dark:text-white">
                 <li>
                     <Link href="/" className="hover:underline">
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about" className = "hover:underline">
-                        About
+                    <Link href="/project" className = "hover:underline">
+                        Project
                     </Link>
                 </li>
                 <li>

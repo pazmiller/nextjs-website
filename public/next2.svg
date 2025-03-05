@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="394" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <path d="m262,0l68.5,0l0,12.7l-27.2,0l0,66.6l-13.6,0l0,-66.6l-27.7,0l0,-12.7zm-113,0l0,12.7l-55,0l0,20.4l44.3,0l0,12.6l-44.3,0l0,21l55,0l0,12.6l-68.5,0l0,-79.3l68.7,0l-0.2,0zm34.3,0l-17.8,0l63.8,79.4l17.9,0l-32,-39.7l32,-39.6l-17.9,0l-23,28.6l-23,-28.6l0,-0.1zm18.3,56.7l-9,-11l-27.1,33.7l17.8,0l18.3,-22.7z" fill="#000" id="svg_1"/>
+  <path d="m81,79.3l-64,-79.3l-17,0l0,79.3l13.6,0l0,-62.3l50.2,62.3l17.2,0zm252.6,-0.4c-1,0 -1.8,-0.4 -2.5,-1s-1.1,-1.6 -1.1,-2.6s0.3,-1.8 1,-2.5s1.6,-1 2.6,-1s1.8,0.3 2.5,1a3.4,3.4 0 0 1 0.6,4.3a3.7,3.7 0 0 1 -3,1.8l-0.1,0zm23.2,-33.5l6,0l0,23.3c0,2.1 -0.4,4 -1.3,5.5a9.1,9.1 0 0 1 -3.8,3.5c-1.6,0.8 -3.5,1.3 -5.7,1.3c-2,0 -3.7,-0.4 -5.3,-1s-2.8,-1.8 -3.7,-3.2c-0.9,-1.3 -1.4,-3 -1.4,-5l6,0c0.1,0.8 0.3,1.6 0.7,2.2s1,1.2 1.6,1.5c0.7,0.4 1.5,0.5 2.4,0.5c1,0 1.8,-0.2 2.4,-0.6a4,4 0 0 0 1.6,-1.8c0.3,-0.8 0.5,-1.8 0.5,-3l0,-23.1l0,-0.1zm30.9,9.1a4.4,4.4 0 0 0 -2,-3.3a7.5,7.5 0 0 0 -4.3,-1.1c-1.3,0 -2.4,0.2 -3.3,0.5c-0.9,0.4 -1.6,1 -2,1.6a3.5,3.5 0 0 0 -0.3,4c0.3,0.5 0.7,0.9 1.3,1.2l1.8,1l2,0.5l3.2,0.8c1.3,0.3 2.5,0.7 3.7,1.2a13,13 0 0 1 3.2,1.8a8.1,8.1 0 0 1 3,6.5c0,2 -0.5,3.7 -1.5,5.1a10,10 0 0 1 -4.4,3.5c-1.8,0.8 -4.1,1.2 -6.8,1.2c-2.6,0 -4.9,-0.4 -6.8,-1.2c-2,-0.8 -3.4,-2 -4.5,-3.5a10,10 0 0 1 -1.7,-5.6l6,0a5,5 0 0 0 3.5,4.6c1,0.4 2.2,0.6 3.4,0.6c1.3,0 2.5,-0.2 3.5,-0.6c1,-0.4 1.8,-1 2.4,-1.7a4,4 0 0 0 0.8,-2.4c0,-0.9 -0.2,-1.6 -0.7,-2.2a11,11 0 0 0 -2.1,-1.4l-3.2,-1l-3.8,-1c-2.8,-0.7 -5,-1.7 -6.6,-3.2a7.2,7.2 0 0 1 -2.4,-5.7a8,8 0 0 1 1.7,-5a10,10 0 0 1 4.3,-3.5c2,-0.8 4,-1.2 6.4,-1.2c2.3,0 4.4,0.4 6.2,1.2c1.8,0.8 3.2,2 4.3,3.4c1,1.4 1.5,3 1.5,5l-5.8,0l0,-0.1z" fill="#000" id="svg_2"/>
+  <text fill="#000000" font-family="Serif" font-size="87.19" id="svg_3" stroke="#000000" stroke-width="0" text-anchor="middle" x="348.02" xml:space="preserve" y="20"/>
+  <text fill="#000000" font-family="Serif" font-size="24" id="svg_4" stroke="#000000" stroke-width="0" text-anchor="middle" x="342" xml:space="preserve" y="17"/>
+  <text fill="#000000" font-family="Serif" font-size="24" id="svg_5" stroke="#000000" stroke-width="0" text-anchor="middle" x="349" xml:space="preserve" y="10"/>
+  <text fill="#000000" font-family="Serif" font-size="24" id="svg_6" stroke="#000000" stroke-width="0" text-anchor="middle" x="377" xml:space="preserve" y="3"/>
+  <text fill="#000000" font-family="Serif" font-size="24" id="svg_7" stroke="#000000" stroke-width="0" text-anchor="middle" x="349" xml:space="preserve" y="0"/>
+  <text fill="#000000" font-family="Serif" font-size="24" id="svg_8" stroke="#000000" stroke-width="0" text-anchor="middle" x="372" xml:space="preserve" y="12"/>
+  <text fill="#000000" font-family="Sans-serif" font-size="16.91" font-weight="bold" id="svg_9" stroke="#000000" stroke-width="0" style="cursor: move;" text-anchor="middle" x="347.08" xml:space="preserve" y="29.94">Powered</text>
+  <text fill="#000000" font-family="Sans-serif" font-size="16.91" font-weight="bold" id="svg_10" stroke="#000000" stroke-width="0" style="cursor: move;" text-anchor="middle" x="320" xml:space="preserve" y="48">by</text>
+ </g>
+</svg>
