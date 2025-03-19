@@ -7,7 +7,7 @@ import project2Img from '@/assets/gsf.png';
 import project2ImgLogo from '@/assets/gsf_logo.png';
 import project3Img from '@/assets/rhul.png';
 import project3ImgLogo from '@/assets/rhul_logo.png';
-import projectNoteImg from '@/assets/note.png';
+// import projectNoteImg from '@/assets/note.png';
 import projectNoteImgLogo from '@/assets/note_logo.png';
 import projectNextImage from '@/assets/nextjs.png';
 

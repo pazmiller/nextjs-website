@@ -2,7 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Navbar(){
+export default function Navbar()
+{
     return (
         <nav>
             <ul className="flex flex-row md:flex-row gap-20 text-black dark:text-white">
@@ -12,17 +13,22 @@ export default function Navbar(){
                     </Link>
                 </li>
                 <li>
-                    <Link href="/project" className = "hover:underline">
+                    <Link href="/project" className="hover:underline">
                         Project
                     </Link>
                 </li>
                 <li>
                     <Link href="/contact" className="hover:underline">
-                    Contact
+                        Contact
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/about" className="hover:underline">
+                        About
                     </Link>
                 </li>
             </ul>
         </nav>
 
-)            
+    )
 }

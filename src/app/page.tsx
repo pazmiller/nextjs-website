@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SciFiGreeting from "./components/Greeting";
-import VideoMain from "./components/VideoMain";
+import MagneticYoyo from "./components/MagneticYoyo";
 export default function Home()
 {
   return (
@@ -14,11 +14,15 @@ export default function Home()
         </div>
         <Navbar />
       </header> */}
+      {/* 添加MagneticYoyo组件作为背景效果 */}
+      <div className="absolute flex justify-center items-center">
+        <MagneticYoyo />
+      </div>
       <div className="w-full">
-        <VideoMain />
+        {/* <VideoMain /> */}
 
-        <div className="w-full lg:w-2/3 mt-4">
-          <div className="h-[150px] w-full flex justify-center items-center">
+        <div className="gap-20 w-full mt-4">
+          <div className="gap-20 h-[150px] w-full flex justify-center">
             <SciFiGreeting glow_text="Hi! A Developer Here, Nice to Meet You!" />
           </div>
         </div>
