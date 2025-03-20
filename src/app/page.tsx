@@ -28,7 +28,7 @@ export default function Home()
         </div>
       </div>
 
-      <main className="flex gap-8 row-start-3 items-bottom sm:items-start w-full max-w-[900px] mt-4">
+      <main className="flex gap-8 items-center justify-center w-full max-w-[900px] mx-auto my-auto  ">
         <ol className="text-black dark:text-white list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
         </ol>
 
@@ -46,7 +46,7 @@ export default function Home()
               width={20}
               height={20}
             />
-            Download his CV!
+            You found his CV!
           </a>
         </div>
       </main>

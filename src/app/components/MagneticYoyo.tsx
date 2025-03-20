@@ -60,6 +60,8 @@ const MagneticYoyo = () =>
                         point.setAttribute( "cy", y.toString() );
                         point.setAttribute( "r", ( radius / 5 ).toString() );
                         const line = document.createElementNS( "http://www.w3.org/2000/svg", "line" );
+                        line.setAttribute( "stroke", "#17f700" );
+                        line.setAttribute( "stroke-width", "1" );
                         line.setAttribute( "x1", x.toString() );
                         line.setAttribute( "y1", y.toString() );
                         line.setAttribute( "x2", x.toString() );
@@ -98,7 +100,7 @@ const MagneticYoyo = () =>
                                     cx: ball.move_x,
                                     cy: ball.move_y,
                                 },
-                                duration: 0.5,
+                                duration: 1.5,
                                 ease: "power3.out",
                             } )
                             .to( ball.line, {
@@ -106,7 +108,7 @@ const MagneticYoyo = () =>
                                     x2: ball.move_x,
                                     y2: ball.move_y,
                                 },
-                                duration: 0.5,
+                                duration: 1.5,
                                 ease: "power3.out",
                             }, "<" )
                             .to( ball, {
@@ -114,7 +116,7 @@ const MagneticYoyo = () =>
                                     cx: ball.ori_x,
                                     cy: ball.ori_y,
                                 },
-                                duration: 1,
+                                duration: 2,
                                 ease: "power3.out",
                             }, "<0.1" )
                             .to( ball.line, {
@@ -122,7 +124,7 @@ const MagneticYoyo = () =>
                                     x2: ball.ori_x,
                                     y2: ball.ori_y,
                                 },
-                                duration: 1,
+                                duration: 2,
                                 ease: "power3.out",
                             }, "<" );
                     }
