@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SciFiGreeting from "../components/Greeting";
 import VideoMain from "../components/VideoMain";
-import MagneticYoyo from "../components/MagneticYoyo";
 export default function Home()
 {
     return (
@@ -20,7 +19,7 @@ export default function Home()
 
                 <div className="gap-20 w-full lg:w-2/3 mt-4">
                     <div className="gap-20 h-[150px] w-full flex justify-center">
-                        <SciFiGreeting glow_text="Hi! A Developer Here, Nice to Meet You!" />
+                        <SciFiGreeting glow_text="Stay curious and stay ahead!" />
                     </div>
                 </div>
             </div>

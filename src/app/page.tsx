@@ -7,14 +7,13 @@ export default function Home()
 
     <div className="bg-white dark:bg-black grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
-      {/* 创建一个专门的 header 区域 */}
+      {/* header now not needed individually */}
       {/* <header className="w-full py-6 px-8 sm:px-20 flex justify-between items-center border-b border-gray-200 dark:border-gray-800">
         <div className="flex items-center">
           <ThemeToggle />
         </div>
         <Navbar />
       </header> */}
-      {/* 添加MagneticYoyo组件作为背景效果 */}
       <div className="absolute flex justify-center items-center">
         <MagneticYoyo />
       </div>
@@ -78,7 +77,8 @@ export default function Home()
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-black dark:text-white"
-          href="暂定"
+          href="https://github.com/pazmiller/the-note/releases/download/V1.1.0/Essential.Note.Setup.1.1.0.exe"
+          download
         >
           <Image
             aria-hidden

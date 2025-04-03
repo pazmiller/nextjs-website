@@ -11,7 +11,7 @@
   "dependencies": {
     "axios": "^1.8.1",
     "gsap": "^3.12.7",
-    "next": "15.1.7",
+    "next": "^15.2.4",
     "next-themes": "^0.4.4",
     "nextjs-study": "file:",
     "react": "^19.0.0",

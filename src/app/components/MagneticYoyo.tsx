@@ -1,16 +1,34 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useTheme } from 'next-themes';
 import gsap from 'gsap';
-
 
 
 const MagneticYoyo = () =>
 {
     const containerRef = useRef<SVGSVGElement | null>( null );
+    const { theme, resolvedTheme } = useTheme();
+    const [ mounted, setMounted ] = useState( false );
+
+    const isDarkTheme = theme === 'dark' || resolvedTheme === 'dark';
+
+    const ballColor = isDarkTheme ? '#17f700' : '#05a177';
+    const pointColor = isDarkTheme ? '#f7f7f7' : '#000000';
+    const lineColor = isDarkTheme ? '#17f700' : '#05a177';
 
     useEffect( () =>
     {
-        if ( !containerRef.current ) return;
+        setMounted( true );
+    }, [] );
+
+    useEffect( () =>
+    {
+        if ( !containerRef.current || !mounted ) return;
+        // 清除现有SVG内容以便重建
+        while ( containerRef.current.firstChild )
+        {
+            containerRef.current.removeChild( containerRef.current.firstChild );
+        }
 
         const magnetic: MagneticObject = {
             container: containerRef.current,
@@ -47,20 +65,20 @@ const MagneticYoyo = () =>
                 {
                     for ( let l = 0; l <= this.lines; l++ )
                     {
-                        let x = this.width / this.lines * l;
-                        let y = this.height / this.rows * r;
+                        const x = this.width / this.lines * l;
+                        const y = this.height / this.rows * r;
                         const ball = document.createElementNS( "http://www.w3.org/2000/svg", "circle" );
-                        ball.setAttribute( "fill", "#17f700" );
+                        ball.setAttribute( "fill", ballColor );
                         ball.setAttribute( "cx", x.toString() );
                         ball.setAttribute( "cy", y.toString() );
                         ball.setAttribute( "r", radius.toString() );
                         const point = document.createElementNS( "http://www.w3.org/2000/svg", "circle" );
-                        point.setAttribute( "fill", "#f7f7f7" );
+                        point.setAttribute( "fill", pointColor );
                         point.setAttribute( "cx", x.toString() );
                         point.setAttribute( "cy", y.toString() );
                         point.setAttribute( "r", ( radius / 5 ).toString() );
                         const line = document.createElementNS( "http://www.w3.org/2000/svg", "line" );
-                        line.setAttribute( "stroke", "#17f700" );
+                        line.setAttribute( "stroke", lineColor );
                         line.setAttribute( "stroke-width", "1" );
                         line.setAttribute( "x1", x.toString() );
                         line.setAttribute( "y1", y.toString() );
@@ -153,7 +171,8 @@ const MagneticYoyo = () =>
             window.removeEventListener( 'resize', handleResize );
             document.removeEventListener( 'mousemove', handleMouseMove );
         };
-    }, [] );
+    }, [ ballColor, pointColor, lineColor, mounted ] );
+    if ( !mounted ) return <svg ref={containerRef} className="absolute w-[50rem] h-[50rem] overflow-visible" />;
 
     return (
         <svg
